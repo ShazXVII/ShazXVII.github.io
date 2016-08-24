@@ -46,13 +46,47 @@ main {
 .para audio {
   width: 100%;
 }
-.para img {
+.mySlides img {
   max-width: 100%;
-  margin-bottom: 5em;
 }
 footer {
   width: 100%;
   text-align: center;
   color: #333;
   padding-bottom: 3em;
+}
+.mySlides  {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 8vw 2em;
+  text-align: center;
+  background-color: black;
+}
+.mySlides h2 {
+  color: white;
+  font-size: 300%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+#happy {
+  background-image: url("http://media3.s-nbcnews.com/i/MSNBC/Components/Video/201607/a_ov_RNC_trump_mashup_160722__872382.jpg");
+}
+#angry {
+  background-image: url("http://media.cmgdigital.com/shared/img/photos/2016/06/27/4a/a9/donald-trump-070715-getty-ftr-usjpg_xcgoz1q5mnjn1v14mth50ppuj.jpg");
+}
+#delighted {
+  background-image: url("http://jtf.org/wp-content/uploads/2016/03/donald_trump_screaming.jpg");
+}
+#positive {
+  background-image: url("http://media2.s-nbcnews.com/i/MSNBC/Components/Video/151228/tdy_jackson_trump_151228.jpg");
+}
+#surprised {
+  background-image: url("http://images.performgroup.com/di/library/sporting_news/16/4/trump-donald-080715-getty-ftr_3xisndsnzkbt10wclogb0x9pf.jpg?t=146075031");
+}
+#negative {
+  background-image: url("http://media2.s-nbcnews.com/i/MSNBC/Components/Video/160105/tdy_alexander_trump_160105.jpg");
 }
