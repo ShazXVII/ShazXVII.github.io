@@ -1,0 +1,31 @@
+body {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_of_North_Korea.svg/2000px-Flag_of_North_Korea.svg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+  font-family: sans-serif;
+  margin: 0 auto;
+  background-color: #024FA2;
+}
+h1 {
+  padding-top: 4vw;
+  padding-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  text-align: center;
+}
+.main {
+  width: 50%;
+  height: 28%;
+  background-color: black;
+  margin-left: 25%;
+}
+.main img {
+  max-width: 100%;
+}
+.toptext {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
