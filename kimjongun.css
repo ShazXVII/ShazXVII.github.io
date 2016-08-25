@@ -20,6 +20,7 @@ h1 {
 .main {
   width: 50%;
   height: 28%;
+  max-width: 650px;
   background-color: black;
   margin-left: 25%;
 }
