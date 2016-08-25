@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GwF HiO</title>
+  <link rel="stylesheet" href="golf.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Select Map</h1>
+    <a href="golfforest.html" class="item1">Forest</a>
+    <a href="golfoasis.html" class="item2">Oasis</a>
+    <a href="golftwilight.html" class="item3">Twilight</a>
+  </main>
+<script>
+$(function oasis() {
+  $('.item2').hover(function() {
+    $('main').css('background-image', 'url("https://i.ytimg.com/vi/aCtvqZD0DY4/maxresdefault.jpg")');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('main').css('background-image', 'url("https://humblebundle-a.akamaihd.net/misc/files/hashed/c413ac5f06e119ba617d2ed5005b07753065372f.jpg")');
+  });
+});
+
+</script>
+<script>
+$(function twilight() {
+  $('.item3').hover(function() {
+    $('main').css('background-image', 'url("http://vignette1.wikia.nocookie.net/golf-with-your-friends/images/2/28/20160623162259_1.jpg/revision/latest?cb=20160623172858")');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('main').css('background-image', 'url("https://humblebundle-a.akamaihd.net/misc/files/hashed/c413ac5f06e119ba617d2ed5005b07753065372f.jpg")');
+  });
+});
+
+</script>
+</body>
+</html>
