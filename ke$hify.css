@@ -29,7 +29,6 @@ body {
   padding-bottom: 2em;
 }
 .form textarea {
-  resize: vertical;
 }
 .kesh {
   margin: 2em;
