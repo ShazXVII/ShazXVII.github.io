@@ -29,6 +29,7 @@ body {
   padding-bottom: 2em;
 }
 .form textarea {
+  max-width: 50%;
 }
 .kesh {
   margin: 2em;
