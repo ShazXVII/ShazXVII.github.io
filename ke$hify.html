@@ -25,13 +25,10 @@
   </div>
   <script type="text/javascript">
   function ke$hify() {
-    var origString = document.form1.inTB.value;
-    var inChar = 's';
-    var outChar = '$';
-    var newString = origString.split(inChar);
-    newString = newString.join(outChar);
-    document.form1.outTB.value = newString;
-  }
+      var newString = document.form1.inTB.value.replace(
+          new RegExp('s|S'), '$');
+      document.form1.outTB.value = newString;
+    }
   </script>
   <footer>©Erik Skår - 2016</footer>
 </body>
