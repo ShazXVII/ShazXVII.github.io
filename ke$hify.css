@@ -30,7 +30,7 @@ body {
 }
 .form textarea {
   max-width: 90%;
-  max-height: 800px;
+  max-height: 200px;
 }
 .kesh {
   margin: 2em;
