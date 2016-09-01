@@ -111,8 +111,15 @@
     $('.celeb').click(function() {
       $(this).siblings().hide();
       var x = Math.floor(Math.random() * 22) + 1
+      var currentID = this.id
+      if (x == currentID) {
+        x = Math.floor(Math.random() * 22) + 1
+        console.log("it works")
+      }
       $('#'+x).show();
       console.log(x);
+      console.log(currentID)
+
     });
     var startOne = Math.floor(Math.random() * 22) + 1
     var startTwo = Math.floor(Math.random() * 22) + 1
