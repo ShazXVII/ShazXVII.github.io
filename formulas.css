@@ -41,9 +41,12 @@ h1:hover {
   border: none;
   background-color: transparent;
   font-size: 150%;
+  letter-spacing: 2px;
+  transition: none 200ms ease-out;
+  transition-property: letter-spacing;
 }
 .subjects button:hover {
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   transition: none 200ms ease-out;
   transition-property: letter-spacing;
 }
