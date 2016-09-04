@@ -37,6 +37,7 @@ h1:hover {
 }
 .subjects button {
   text-decoration: none;
+  text-transform: uppercase;
   color: #333;
   border: none;
   background-color: transparent;
