@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+.navbar {
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  display: inline;
+  text-align: center;
+  color: white;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  opacity: 0.8
+
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.header {
+  background-image: url("landscape.jpg");
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 25.5vw 2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 10px;
+}
+.main {
+  max-width: 70%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  padding-bottom: 5em;
+}
+.footer {
+  position: fixed;
+  z-index: -1;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
