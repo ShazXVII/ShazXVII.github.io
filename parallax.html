@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="parallax.css">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+  <div class="topbar" id="topflex">
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+  </div>
+  <div class="image">
+  </div>
+  <div class="header">
+    <h1>Byåsen Bibliotek</h1>
+  </div>
+  <div class="top">
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+  </div>
+  <div class="bot" id="scrollpoint">
+    <div class="para" id="flex">
+      <div class="flextext">
+        <h2>Introduksjon</h2>
+        <p>Bow wow wow stuff tortor. Sed doggy. Things sheezy dolor dapibizzle turpis tempizzle pizzle. Maurizzle bling bling nibh izzle turpis. Pot izzle tortor. Pellentesque eleifend rhoncus that's the shizzle. In hac you son of a bizzle platea the bizzle. Fo shizzle dapibizzle. Shizznit tellizzle urna, pretizzle boom shackalack, my shizz rizzle, eleifend shizzle my nizzle crocodizzle, nunc. Gangster fo shizzle. Integizzle mah nizzle velit sizzle purus.</p>
+      </div>
+      <div class="flextext">
+        <h2>Introduksjon</h2>
+        <p>Bow wow wow stuff tortor. Sed doggy. Things sheezy dolor dapibizzle turpis tempizzle pizzle. Maurizzle bling bling nibh izzle turpis. Pot izzle tortor. Pellentesque eleifend rhoncus that's the shizzle. In hac you son of a bizzle platea the bizzle. Fo shizzle dapibizzle. Shizznit tellizzle urna, pretizzle boom shackalack, my shizz rizzle, eleifend shizzle my nizzle crocodizzle, nunc. Gangster fo shizzle. Integizzle mah nizzle velit sizzle purus.</p>
+      </div>
+    </div>
+    <div class="image1" id="intro">
+
+    </div>
+    <div class="para">
+      <h2 id="h2best">Bestsellers</h2>
+      <div id="bestbooks">
+        <div class="flexbooks">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
+          <p>Dreaming of Sweden</p>
+        </div>
+        <div class="flexbooks">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
+          <p>Dreaming of Sweden</p>
+        </div>
+        <div class="flexbooks">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
+          <p>Dreaming of Sweden</p>
+        </div>
+        <div class="flexbooks">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
+          <p>Dreaming of Sweden</p>
+        </div>
+        <div class="flexbooks">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
+          <p>Dreaming of Sweden</p>
+        </div>
+        <div class="flexbooks">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
+          <p>Dreaming of Sweden</p>
+        </div>
+      </div>
+    </div>
+    <div class="image1" id="loc">
+
+    </div>
+    <div class="para" id="flex">
+      <div class="flextext">
+        <h2>Contact</h2>
+        <p>Adress: Selsbakkveien 34, 7027 Trondheim, Norway <br>
+          Phone: 72 81 11 26 <br>
+          Official website: <a href="http://www.trondheim.kommune.no/folkebiblioteket/">TFB.no</a> <br>
+        </p>
+      </div>
+      <div class="flextext">
+        <h2>Open Hours:</h2>
+        <ul>
+          <li>Monday: 10 - 19</li>
+          <li>Tuesday: 10 - 19</li>
+          <li>Wednesday: 10 - 19</li>
+          <li>Thursday: 10 - 19</li>
+          <li>Friday: 10 - 19</li>
+          <li>Saturday: 10 - 14</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="image1" id="bestsellers">
+
+    </div>
+  </div>
+  <div class="footer">
+    <a href="">Back to Top</a>
+    <p>©Erik Skår - 2016</p>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function() {
+  $("#topflex").hide(); //hide your div initially
+  var topOfOthDiv = $("#scrollpoint").offset().top;
+  $(window).scroll(function() {
+      if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+          $("#topflex").show(200); //reached the desired point -- show div
+      }
+      else if($(window).scrollTop() <= topOfOthDiv) { //scrolled past the other div?
+          $("#topflex").hide(200); //reached the desired point -- show div
+      }
+  });
+});
+
+  </script>
+</body>
+</html>
