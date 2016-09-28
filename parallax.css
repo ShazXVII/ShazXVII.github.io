@@ -29,6 +29,7 @@ h1 {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #F5ECCD;
+  flex-wrap: wrap;
 }
 .header {
   background-color: #254049;
@@ -41,7 +42,7 @@ h1 {
 .top {
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   background-color: #254049;
   z-index: 0;
   max-height: 7vh;
@@ -130,8 +131,37 @@ p {
   justify-content: center;
   flex-wrap: wrap;
 }
-#h2best {
+#aBooks {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #254049;
+  flex-wrap: wrap;
+}
+.bookmenu {
+  text-decoration: none;
+  color: #F5ECCD;
+  padding: 0.5em 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  letter-spacing: 2px;
+}
+.bookmenu:hover {
+  background-color: #F5ECCD;
+  color: #254049;
+  text-decoration: none;
+  cursor: pointer;
+}
+.bookmenuactive {
+  text-decoration: none;
+  background-color: #F5ECCD;
+  color: #254049;
+  padding: 0.5em 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  letter-spacing: 2px;
 }
 .flexbooks {
   max-width: 25%;

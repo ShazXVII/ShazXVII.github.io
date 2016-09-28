@@ -10,24 +10,26 @@
 </head>
 <body>
   <div class="topbar" id="topflex">
-    <a href="">Home</a>
-    <a href="">About</a>
-    <a href="">Contact</a>
+    <a href="#topimage" class="home">Home</a>
+    <a href="#h2intro" class="about">About</a>
+    <a href="#aBooks" class="books">Books</a>
+    <a href="#h2con" class="contact">Contact</a>
   </div>
-  <div class="image">
+  <div class="image" id="topimage">
   </div>
   <div class="header">
     <h1>Byåsen Bibliotek</h1>
   </div>
   <div class="top">
-    <a href="">Home</a>
-    <a href="">About</a>
-    <a href="">Contact</a>
+    <a href="#topimage" class="home">Home</a>
+    <a href="#h2intro" class="about">About</a>
+    <a href="#aBooks" class="books">Books</a>
+    <a href="#h2con" class="contact">Contact</a>
   </div>
   <div class="bot" id="scrollpoint">
     <div class="para" id="flex">
       <div class="flextext">
-        <h2>Introduksjon</h2>
+        <h2 id="h2intro">Introduksjon</h2>
         <p>Bow wow wow stuff tortor. Sed doggy. Things sheezy dolor dapibizzle turpis tempizzle pizzle. Maurizzle bling bling nibh izzle turpis. Pot izzle tortor. Pellentesque eleifend rhoncus that's the shizzle. In hac you son of a bizzle platea the bizzle. Fo shizzle dapibizzle. Shizznit tellizzle urna, pretizzle boom shackalack, my shizz rizzle, eleifend shizzle my nizzle crocodizzle, nunc. Gangster fo shizzle. Integizzle mah nizzle velit sizzle purus.</p>
       </div>
       <div class="flextext">
@@ -39,7 +41,15 @@
 
     </div>
     <div class="para">
-      <h2 id="h2best">Bestsellers</h2>
+      <div id="aBooks">
+        <a class="bookmenu" id="aOV">Overview</a>
+        <a class="bookmenu" id="aBS">Bestsellers</a>
+        <a class="bookmenu" id="aNR">Newly Released</a>
+        <a class="bookmenu" id="aEC">Editor's Choice</a>
+      </div>
+      <div id="aContent">
+
+
       <div id="bestbooks">
         <div class="flexbooks">
           <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
@@ -66,13 +76,19 @@
           <p>Dreaming of Sweden</p>
         </div>
       </div>
+      <div id="overview">
+        <p>OV</p>
+      </div>
+      <div id="newreleases"><p>NR</p></div>
+      <div id="editorschoice"><p>EC</p></div>
     </div>
+  </div>
     <div class="image1" id="loc">
 
     </div>
     <div class="para" id="flex">
       <div class="flextext">
-        <h2>Contact</h2>
+        <h2 id="h2con">Contact</h2>
         <p>Adress: Selsbakkveien 34, 7027 Trondheim, Norway <br>
           Phone: 72 81 11 26 <br>
           Official website: <a href="http://www.trondheim.kommune.no/folkebiblioteket/">TFB.no</a> <br>
@@ -96,7 +112,7 @@
     </div>
   </div>
   <div class="footer">
-    <a href="">Back to Top</a>
+    <a href="#topimage" id="BtT">Back to Top</a>
     <p>©Erik Skår - 2016</p>
   </div>
   <script type="text/javascript">
@@ -113,6 +129,62 @@
   });
 });
 
+  </script>
+  <script type="text/javascript">
+  $(".home").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#topimage").offset().top + 60
+  }, 2000);
+  });
+  $(".contact").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#h2con").offset().top - 450
+  }, 2000);
+  });
+  $("#BtT").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#topimage").offset().top + 60
+  }, 2000);
+  });
+  $(".books").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#aBooks").offset().top -40
+  }, 2000);
+  });
+  $(".about").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#h2intro").offset().top -20
+  }, 2000);
+  });
+  </script>
+  <script type="text/javascript">
+
+  var buttons = [aOV, aNR, aBS, aEC]
+  var divs = [overview, newreleases, bestbooks, editorschoice]
+    $(buttons[0]).click(function() {
+      $(divs[0]).show();
+      $(divs[0]).siblings().hide();
+      $(buttons[0]).addClass("bookmenuactive");
+      $(buttons[0]).siblings().removeClass("bookmenuactive")
+    });
+    $(buttons[1]).click(function() {
+      $(divs[1]).show();
+      $(divs[1]).siblings().hide();
+      $(buttons[1]).addClass("bookmenuactive");
+      $(buttons[1]).siblings().removeClass("bookmenuactive")
+    });
+    $(buttons[2]).click(function() {
+      $(divs[2]).show();
+      $(divs[2]).siblings().hide();
+      $(buttons[2]).addClass("bookmenuactive");
+      $(buttons[2]).siblings().removeClass("bookmenuactive")
+    });
+    $(buttons[3]).click(function() {
+      $(divs[3]).show();
+      $(divs[3]).siblings().hide();
+      $(buttons[3]).addClass("bookmenuactive");
+      $(buttons[3]).siblings().removeClass("bookmenuactive")
+    });
   </script>
 </body>
 </html>
