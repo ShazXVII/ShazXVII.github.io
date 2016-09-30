@@ -60,7 +60,7 @@ h1 {
   text-decoration: none;
 }
 .image {
-  background-image: url("https://static.pexels.com/photos/24873/pexels-photo-24873.jpg");
+  background-image: url("bøker.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ h1 {
   z-index: -1;
 }
 #intro {
-  background-image: url("https://static.pexels.com/photos/34084/pexels-photo.jpg");
+  background-image: url("bøker3.jpg");
 }
 #loc {
   background-image: url(location.png);
@@ -172,7 +172,7 @@ p {
   max-height: 100%;
 }
 #bestsellers {
-  background-image: url("https://static.pexels.com/photos/34592/pexels-photo.jpg");
+  background-image: url("frakantina.jpg");
   margin-bottom: 4em;
 }
 li {
