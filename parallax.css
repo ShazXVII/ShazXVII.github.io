@@ -202,6 +202,9 @@ a:hover {
 .footer p,.footer a {
   color: #F5ECCD;
 }
+#newreleases, #overview, #editorschoice {
+  display: none;
+}
 @media only screen and (max-width: 768px) {
   .header h1 {
     font-size: 300%;
