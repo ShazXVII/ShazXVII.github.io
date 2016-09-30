@@ -14,6 +14,7 @@
     <a href="#h2intro" class="about">About</a>
     <a href="#aBooks" class="books">Books</a>
     <a href="#h2con" class="contact">Contact</a>
+    <a id="hamburger">☰</a>
   </div>
   <div class="image" id="topimage">
   </div>
@@ -180,6 +181,20 @@
       $(divs[3]).siblings().hide();
       $(buttons[3]).addClass("bookmenuactive");
       $(buttons[3]).siblings().removeClass("bookmenuactive")
+    });
+  </script>
+  <script type="text/javascript">
+    $("#hamburger").click(function() {
+      if ($(".topbar").children().css('display') == 'none') {
+        $(".topbar").children().show();
+        document.getElementById("hamburger").style.marginLeft = 0;
+        console.log("you showed the elements")
+      } else {
+        $(".topbar").children().hide();
+        $("#hamburger").show();
+        document.getElementById("hamburger").style.marginLeft = 540;
+        console.log("you hid the elements")
+      }
     });
   </script>
 </body>

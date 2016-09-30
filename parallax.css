@@ -30,6 +30,14 @@ h1 {
   border-bottom: 1px solid #F5ECCD;
   flex-wrap: wrap;
 }
+#hamburger {
+  display: none;
+  margin-left: 90%;
+}
+#hamburger:hover {
+  cursor: pointer;
+}
+
 .header {
   background-color: #254049;
   border-bottom: 1px solid #F5ECCD;
@@ -224,6 +232,12 @@ a:hover {
   }
   .top a {
     font-size: 60%;
+  }
+  #hamburger {
+    display: flex;
+  }
+  .topbar a {
+    display: none;
   }
 }
 @media only screen and (max-width: 375px) {
