@@ -30,12 +30,34 @@ h1 {
   border-bottom: 1px solid #F5ECCD;
   flex-wrap: wrap;
 }
+#bamburger {
+  display: none;
+  position: fixed;
+  float: right;
+  padding: 1em;
+  padding-left: 95%;
+  font-size: 80%;
+  z-index: 0;
+  color: #254049;
+  width: 100%;
+  background-color: #254049;
+  border-bottom: 1px solid #F5ECCD;
+}
 #hamburger {
   display: none;
-  margin-left: 90%;
+  position: fixed;
+  float: right;
+  padding: 1em;
+  padding-left: 95%;
+  font-size: 80%;
+  z-index: 4;
+  color: #F5ECCD;
+  width: 100%;
+  border-bottom: 1px solid #F5ECCD;
 }
 #hamburger:hover {
   cursor: pointer;
+  text-decoration: none;
 }
 
 .header {
@@ -233,8 +255,8 @@ a:hover {
   .top a {
     font-size: 60%;
   }
-  #hamburger {
-    display: flex;
+  #hamburger, #bamburger {
+    display: block;
   }
   .topbar a {
     display: none;
