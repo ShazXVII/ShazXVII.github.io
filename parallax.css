@@ -8,7 +8,6 @@ h1 {
 }
 .topbar {
   width: 100%;
-  max-height: 6vh;
   background-color: #254049;
   display: inline;
   position: fixed;
@@ -45,8 +44,6 @@ h1 {
   flex-wrap: wrap;
   background-color: #254049;
   z-index: 0;
-  max-height: 7vh;
-  min-height: 7vh;
 
 }
 .top a {
@@ -69,7 +66,7 @@ h1 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  height: 85vh;
+  height: 70vh;
   z-index: -1;
 
 }
@@ -204,4 +201,17 @@ a:hover {
 }
 .footer p,.footer a {
   color: #F5ECCD;
+}
+@media only screen and (max-width: 768px) {
+  .header h1 {
+    font-size: 300%;
+  }
+  #flex {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .header h1 {
+    font-size: 100%;
+  }
 }
