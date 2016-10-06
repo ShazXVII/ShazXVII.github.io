@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: #254049;
+  background-color: #5A7612;
   z-index: -2;
 }
 h1 {
@@ -8,7 +8,7 @@ h1 {
 }
 .topbar {
   width: 100%;
-  background-color: #254049;
+  background-color: #5A7612;
   display: inline;
   position: fixed;
 }
@@ -21,7 +21,7 @@ h1 {
 }
 .topbar a:hover {
   background-color: #F5ECCD;
-  color: #254049;
+  color: #5A7612;
   text-decoration: none;
 }
 #topflex {
@@ -38,9 +38,9 @@ h1 {
   padding-left: 95%;
   font-size: 80%;
   z-index: 0;
-  color: #254049;
+  color: #5A7612;
   width: 100%;
-  background-color: #254049;
+  background-color: #5A7612;
 }
 #hamburger {
   display: none;
@@ -61,7 +61,7 @@ h1 {
   display: none;
 }
 .header {
-  background-color: #254049;
+  background-color: #5A7612;
   border-bottom: 1px solid #F5ECCD;
 }
 .header h1 {
@@ -73,7 +73,7 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #254049;
+  background-color: #5A7612;
   z-index: 0;
 
 }
@@ -87,7 +87,7 @@ h1 {
 }
 .top a:hover {
   background-color: #F5ECCD;
-  color: #254049;
+  color: #5A7612;
   text-decoration: none;
 }
 .image {
@@ -134,12 +134,12 @@ h1 {
 .para {
   min-height: 30vh;
   background-color: #F5ECCD;
-  border-bottom: 1px solid #254049;
+  border-bottom: 1px solid #5A7612;
 }
 
 h2 {
   letter-spacing: 1px;
-  color: #254049;
+  color: #5A7612;
   padding-left: 20px;
 }
 p {
@@ -166,7 +166,7 @@ p {
   justify-content: center;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #254049;
+  background-color: #5A7612;
   flex-wrap: wrap;
 }
 .bookmenu {
@@ -179,14 +179,14 @@ p {
 }
 .bookmenu:hover {
   background-color: #F5ECCD;
-  color: #254049;
+  color: #5A7612;
   text-decoration: none;
   cursor: pointer;
 }
 .bookmenuactive {
   text-decoration: none;
   background-color: #F5ECCD;
-  color: #254049;
+  color: #5A7612;
   padding: 0.5em 1em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -216,7 +216,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: #254049;
+  color: #5A7612;
 }
 a:hover {
   text-decoration: underline;
