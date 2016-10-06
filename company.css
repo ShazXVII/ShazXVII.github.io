@@ -52,6 +52,44 @@ body {
   padding-left: 2em;
   letter-spacing: 2px;
   background-color: white;
-  color: #333; }
+  color: #333;
+  margin-bottom: 0.5em;
+  border-radius: 2px; }
+#content #flex1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+#content .underflex1 {
+  margin: 2em;
+  background-color: #EEE;
+  padding: 1em 2em;
+  border-radius: 5px; }
+#content #flex2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: auto;
+  background-color: #EEE;
+  margin-top: 0;
+  padding: 0;
+  width: 70%; }
+#content #underflex2_1 {
+  width: 50%;
+  margin-right: 0.25em;
+  margin-left: -1.5em;
+  margin-top: 0;
+  height: 50vh; }
+#content #underflex2_2 {
+  width: 50%;
+  margin-top: 0;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  height: 20vh; }
+#content #underflex2_3 {
+  width: 48%;
+  margin-left: 0.25em;
+  margin-right: -1.5em;
+  margin-top: 0;
+  height: 50vh; }
 
 /*# sourceMappingURL=company.css.map */
