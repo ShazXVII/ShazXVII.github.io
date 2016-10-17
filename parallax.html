@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="parallax.css">
   <title>Byåsen Bibliotek</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
 </head>
 <body>
   <div id="burgers">
@@ -52,35 +53,61 @@
       <div id="aContent">
         <div id="bestbooks">
           <div class="flexbooks">
-            <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
-            <p>Dreaming of Sweden</p>
+            <img src="densisterevejakta.jpg" alt="">
+            <p>Den siste revejakta</p>
           </div>
           <div class="flexbooks">
-            <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
-            <p>Dreaming of Sweden</p>
+            <img src="denstoredoping.jpg" alt="">
+            <p>Den store dopingbløffen</p>
           </div>
           <div class="flexbooks">
-            <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
-            <p>Dreaming of Sweden</p>
+            <img src="dethjelperikke.jpg" alt="">
+            <p>Det hjelper ikke å blunke</p>
           </div>
           <div class="flexbooks">
-            <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
-            <p>Dreaming of Sweden</p>
+            <img src="banalitetens.jpg" alt="">
+            <p>Banalitetens tyranni</p>
           </div>
           <div class="flexbooks">
-            <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
-            <p>Dreaming of Sweden</p>
+            <img src="evigkrig.jpg" alt="">
+            <p>Evig krig - Israel og Palestina</p>
           </div>
           <div class="flexbooks">
-            <img src="https://s-media-cache-ak0.pinimg.com/originals/75/66/61/7566614e63a3eff93ab36773461d34e6.jpg" alt="">
-            <p>Dreaming of Sweden</p>
+            <img src="hjemreiser.jpg" alt="">
+            <p>Hjemreiser</p>
           </div>
         </div>
         <div id="overview">
-
+          <div class="flexbooks">
+            <img src="densisterevejakta.jpg" alt="">
+            <p>Månedens beste</p>
+          </div>
+          <div class="flexbooks">
+            <img src="hjemreiser.jpg" alt="">
+            <p>Nyeste</p>
+          </div>
+          <div class="flexbooks">
+            <img src="evigkrig.jpg" alt="">
+            <p>Editors favoritt</p>
+          </div>
         </div>
         <div id="newreleases">
-
+          <div class="flexbooks">
+            <img src="mordetsenklekunst.jpg" alt="">
+            <p>Mordets enkle kunst</p>
+          </div>
+          <div class="flexbooks">
+            <img src="sålenge.jpg" alt="">
+            <p>Så lenge himmelen er over jorda</p>
+          </div>
+          <div class="flexbooks">
+            <img src="rodsomblod.jpg" alt="">
+            <p>Rød som blod</p>
+          </div>
+          <div class="flexbooks">
+            <img src="hvavillmarka.jpg" alt="">
+            <p>Hva villmarka lærte meg</p>
+          </div>
         </div>
         <div id="editorschoice">
 
@@ -170,25 +197,25 @@
   var buttons = [aOV, aNR, aBS, aEC]
   var divs = [overview, newreleases, bestbooks, editorschoice]
     $(buttons[0]).click(function() {
-      $(divs[0]).show();
+      $(divs[0]).css('display', 'flex');
       $(divs[0]).siblings().hide();
       $(buttons[0]).addClass("bookmenuactive");
       $(buttons[0]).siblings().removeClass("bookmenuactive")
     });
     $(buttons[1]).click(function() {
-      $(divs[1]).show();
+      $(divs[1]).css('display', 'flex');
       $(divs[1]).siblings().hide();
       $(buttons[1]).addClass("bookmenuactive");
       $(buttons[1]).siblings().removeClass("bookmenuactive")
     });
     $(buttons[2]).click(function() {
-      $(divs[2]).show();
+      $(divs[2]).css('display', 'flex');
       $(divs[2]).siblings().hide();
       $(buttons[2]).addClass("bookmenuactive");
       $(buttons[2]).siblings().removeClass("bookmenuactive")
     });
     $(buttons[3]).click(function() {
-      $(divs[3]).show();
+      $(divs[3]).css('display', 'flex');
       $(divs[3]).siblings().hide();
       $(buttons[3]).addClass("bookmenuactive");
       $(buttons[3]).siblings().removeClass("bookmenuactive")
