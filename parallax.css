@@ -157,6 +157,9 @@ p {
 }
 .flextext {
   margin: 0px 5%;
+  max-width: 50%;
+  min-width: 40%;
+
 }
 #bestbooks {
   display: flex;
