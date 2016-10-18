@@ -129,27 +129,43 @@
     <div class="image1" id="loc">
 
     </div>
-    <div class="para" id="flex">
-      <div class="flextext">
-        <h2 id="h2con">Kontakt</h2>
-        <p>Adresse: Selsbakkveien 34, 7027 Trondheim, Norge <br>
-          Telefon: 72 81 11 26 <br>
-          Offisielt nettsted: <a href="http://www.trondheim.kommune.no/folkebiblioteket/">TFB.no</a> <br>
-        </p>
+    <div class="para">
+      <div id="bBooks">
+        <a class="bookmenu bookmenuactive" id="bKon">Kontakt</a>
+        <a class="bookmenu" id="bLin">Lenker</a>
       </div>
-      <div class="flextext">
-        <h2>Åpningstider:</h2>
-        <ul>
-          <li>Mandag: 10 - 19</li>
-          <li>Tirsdag: 10 - 19</li>
-          <li>Onsdag: 10 - 19</li>
-          <li>Torsdag: 10 - 19</li>
-          <li>Fredag: 10 - 19</li>
-          <li>Lørdag: 10 - 14</li>
-          <li>Søndag: Stengt</li>
-        </ul>
+      <div id="bContent">
+        <div id="kontakt">
+        <div class="para" id="flex2">
+          <div class="flextext">
+            <h2 id="h2con">Kontakt</h2>
+            <p>Adresse: Selsbakkveien 34, 7027 Trondheim, Norge <br>
+              Telefon: 72 81 11 26 <br>
+              Offisielt nettsted: <a href="http://www.trondheim.kommune.no/folkebiblioteket/">TFB.no</a> <br>
+            </p>
+          </div>
+          <div class="flextext">
+            <h2>Åpningstider:</h2>
+            <ul>
+              <li>Mandag: 10 - 19</li>
+              <li>Tirsdag: 10 - 19</li>
+              <li>Onsdag: 10 - 19</li>
+              <li>Torsdag: 10 - 19</li>
+              <li>Fredag: 10 - 19</li>
+              <li>Lørdag: 10 - 14</li>
+              <li>Søndag: Stengt</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <div id="links">
+          <a href="#">Link1</a> <br>
+          <a href="#">Link2</a> <br>
+          <a href="#">Link3</a> <br>
+        </div>
       </div>
     </div>
+
     <div class="image1" id="bestsellers">
     </div>
   </div>
@@ -230,6 +246,22 @@
       $(divs[3]).siblings().hide();
       $(buttons[3]).addClass("bookmenuactive");
       $(buttons[3]).siblings().removeClass("bookmenuactive")
+    });
+  </script>
+  <script type="text/javascript">
+    var buttons2 = [bKon, bLin]
+    var divs2 = [kontakt, links]
+    $(buttons2[0]).click(function() {
+      $(divs2[0]).css('display', 'flex');
+      $(divs2[0]).siblings().hide();
+      $(buttons2[0]).addClass("bookmenuactive");
+      $(buttons2[0]).siblings().removeClass("bookmenuactive")
+    });
+    $(buttons2[1]).click(function() {
+      $(divs2[1]).css('display', 'flex');
+      $(divs2[1]).siblings().hide();
+      $(buttons2[1]).addClass("bookmenuactive");
+      $(buttons2[1]).siblings().removeClass("bookmenuactive")
     });
   </script>
   <script type="text/javascript">

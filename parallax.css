@@ -163,6 +163,31 @@ p {
   display: flex;
   justify-content: center;
 }
+#flex2 {
+  display: flex;
+  justify-content: center;
+}
+#kontakt {
+  justify-content: center;
+}
+#links {
+  flex-direction: column;
+  text-align: center;
+}
+#links a {
+  margin-top: 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 1em;
+  background-color: #00695C;
+  color: #E0F2F1;
+  border: 1px solid #00695C;
+}
+#links a:hover {
+  background-color: #E0F2F1;
+  color: #00695C;
+}
 .flextext {
   margin: 0px 5%;
   max-width: 50%;
@@ -175,6 +200,15 @@ p {
   flex-wrap: wrap;
 }
 #aBooks {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #00695C;
+  flex-wrap: wrap;
+}
+#bBooks {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -254,7 +288,7 @@ a:hover {
 .footer p,.footer a {
   color: #E0F2F1;
 }
-#newreleases, #overview, #editorschoice {
+#newreleases, #overview, #editorschoice, #links {
   display: none;
   justify-content: center;
   flex-wrap: wrap;
