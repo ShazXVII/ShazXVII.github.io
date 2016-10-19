@@ -296,7 +296,7 @@ a:hover {
   .header h1 {
     font-size: 300%;
   }
-  #flex {
+  #flex, #flex2 {
     flex-direction: column;
   }
   .image {
