@@ -277,7 +277,11 @@
       }
     });
     $(".topbar").children().click(function(){
-      $(".topbar").children().hide();
+      if (("#hamburger").css('display') == 'block') {
+        $(".topbar").children().hide();
+      } else {
+        $(".topbar").children().show();
+      }
     });
   </script>
 </body>
