@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  letter-spacing: 1.5;
+  line-height: 1.5;
+}
+th {
+  text-transform: uppercase;
+}
+th:hover {
+  cursor: pointer;
+}
+table {
+  margin: auto;
+  width: 70%;
+}
+tr {
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 300%;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
