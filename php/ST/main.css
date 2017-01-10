@@ -97,6 +97,24 @@ body {
   height: 70vh;
   width: 100%;
 }
+#headerimg5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-image: url("http://study.com/cimages/course-image/sat-math-prep-review-practice_138536_large.jpg");
+  height: 70vh;
+  width: 100%;
+}
+#headerimg4 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-image: url("realfagosv.JPG");
+  height: 70vh;
+  width: 100%;
+}
 #footer {
   width: 100%;
   color: #333;
@@ -119,4 +137,9 @@ iframe {
 }
 #nN {
   padding-bottom: 2em;
+}
+.fag:hover {
+  border: 2px solid #EEE;
+  cursor: pointer;
+  border-radius: 5px;
 }
