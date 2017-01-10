@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  font-family: sans-serif;
+}
+#topimg {
+  background-image: url("http://forums.techsoup.org/cs/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-01-03/whats-in-adobe-creative-cloud.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 100vh;
+  min-height: 100vh;
+  min-width: 50%;
+}
+#topimg h1 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-top: 50vh;
+  text-transform: uppercase;
+}
+h2, h3 {
+  color: #333;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+p,h1 {
+  margin: 0;
+  padding: 0;
+}
+.para {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 100vh;
+  min-height: 100vh;
+  min-width: 50%;
+  border-right: 1px solid #EEE;
+  border-left: 1px solid #EEE;
+}
+.para p, .para h2, .para h3 {
+  padding: 2em;
+  text-align: center;
+}
+.para h2 {
+  padding-bottom: 1em;
+}
+.underpara {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.underpara img {
+  max-width: 10%;
+  margin: auto;
+}
+.midimg {
+  min-width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height: 100vh;
+  min-height: 100vh;
+}
+#firstimg {
+  background-image: url("http://edge.alluremedia.com.au/m/k/2016/01/shutterstock-programming.jpg");
+}
+#secondimg {
+  background-image: url("http://blog.beautheme.com/wp-content/uploads/2015/12/IoT-Graphic-1310x599.png");
+}
+#thirdimg {
+  background-image: url("http://www.sz0931.com/data/out/55/52819480-media-wallpaper.jpg");
+}
+#fourthimg {
+  background-image: url("http://www.quickanddirtytips.com/sites/default/files/images/404/CashFlow.jpg");
+}
+#footer {
+  text-align: center;
+  padding-top: 50vh;
+  padding-left: 2em;
+  padding-right: 2em;
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+}
+#footer p {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  color: white;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#navbar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100vh;
+  padding-top: 30vh;
+}
+#navbar p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+  background-color: white;
+  text-transform: uppercase;
+
+}
+#navbar p:hover {
+  color: white;
+  background-color: #333;
+  cursor: pointer;
+}
+#premiere p, #photoshop p, #aftereffects p, #dynamicwebsite p, #staticwebsite p, #softwarehelp p, #premiere h3, #photoshop h3, #aftereffects h3, #dynamicwebsite h3, #staticwebsite h3, #softwarehelp h3 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+#premiere .underpara, #photoshop .underpara, #aftereffects .underpara, #dynamicwebsite .underpara, #staticwebsite .underpara, #softwarehelp .underpara {
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  width: 40vw;
+}
+.linkactive {
+  background-color: #333 !important;
+  color: white;
+}
+.overpara {
+  width: 100%;
+}

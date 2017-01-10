@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EEE;
+}
+#topimg {
+  background-image: url("http://imgur.com/3NPdxgL.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+#main {
+  width: 100%;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  border-top: 1px black solid;
+
+}
+#main p {
+  margin: 0;
+  letter-spacing: 2px;
+  color: #333;
+  line-height: 1.5;
+}
+.para p {
+  padding-left: 2em;
+}
+h1, h2 {
+  margin: 0;
+  padding: 1em;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+#about {
+  display: flex;
+  justify-content: center;
+}
+#about p {
+  max-width: 40%;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hiddenflex {
+  max-width: 200px;
+  max-height: 400px;
+  text-align: center;
+}
+.hiddenflex img {
+  width: 100%;
+  margin: 0;
+}
+.hiddenflex p {
+  padding-left: 0;
+}
+#footer {
+  background-color: #EEE;
+  width: 100%;
+  text-align: center;
+  font-size: 120%;
+}
+#footer p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+.midimg {
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+
+}
+#first {
+  background-image: url("gym.jpg");
+}
+#second {
+  background-image: url("logowall.png");
+}
+.para, .flex {
+  margin-bottom: 3em;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  background-color: #333;
+}
+.navbar p {
+  text-transform: uppercase;
+  background-color: #333;
+  color: white !important;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.navbar p:hover {
+  background-color: white;
+  color: #333 !important;
+  cursor: pointer;
+}
