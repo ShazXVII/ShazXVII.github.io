@@ -84,7 +84,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
-  background-image: url("http://wallpapercave.com/wp/FSlJFYH.jpg");
+  background-image: url("skap.jpg");
   height: 70vh;
   width: 100%;
 }
@@ -102,7 +102,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
-  background-image: url("http://study.com/cimages/course-image/sat-math-prep-review-practice_138536_large.jpg");
+  background-image: url("math.jpg");
   height: 70vh;
   width: 100%;
 }
@@ -112,6 +112,24 @@ body {
   background-attachment: fixed;
   background-position: bottom;
   background-image: url("realfagosv.JPG");
+  height: 70vh;
+  width: 100%;
+}
+#headerimg6 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-image: url("http://www.theblissery.com/wp-content/uploads/2013/11/ScienceDesign_Header21-1136x492.jpg");
+  height: 70vh;
+  width: 100%;
+}
+#headerimg7 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-image: url("http://schoolweb.tdsb.on.ca/portals/yorkmillsci/images/Social%20Sciences/Social_Sciences_and_Humanities_wordle.png");
   height: 70vh;
   width: 100%;
 }
@@ -134,6 +152,7 @@ iframe {
 .contactflex {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #nN {
   padding-bottom: 2em;
@@ -142,4 +161,14 @@ iframe {
   border: 2px solid #EEE;
   cursor: pointer;
   border-radius: 5px;
+}
+.underflex {
+  text-align: center;
+}
+.underflex span {
+  font-size: 200%;
+}
+.underflex:hover {
+  cursor: pointer;
+
 }
