@@ -27,7 +27,7 @@
       <div class="hiddenflex">
         <img src="https://s-media-cache-ak0.pinimg.com/736x/57/9b/de/579bde54aecc18860ec95472cb88d105.jpg" alt="">
         <p>Tank top</p>
-        <button type="button" name="button">El butto</button>
+        <button type="button" name="button">Add to cart</button>
       </div>
 
     </div>

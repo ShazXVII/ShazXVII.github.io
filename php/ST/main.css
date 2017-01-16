@@ -158,7 +158,8 @@ iframe {
   padding-bottom: 2em;
 }
 .fag:hover {
-  border: 2px solid #EEE;
+  border-top: 2px solid #EEE;
+  border-bottom: 2px solid #EEE;
   cursor: pointer;
   border-radius: 5px;
 }
