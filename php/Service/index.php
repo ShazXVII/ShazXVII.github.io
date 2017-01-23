@@ -12,13 +12,11 @@
 <body>
   <div id="totallyhiddendiv">
     <h2>Please fill out this form <span id="close">X</span></h2>
-    <form class="" action="index.html" method="post">
+    <form id="submitform" action="" method="get">
       email: <br><input type="text" name="email" value=""placeholder="example@example.com"> <br>
       first name: <br> <input type="text" name="fName" value="" placeholder="John"> <br>
       last name: <br> <input type="text" name="lName" value="" placeholder="Johnsen"> <br>
-      social security code: <br> <input type="text" name="ssc" value="" placeholder="11119933953"> <br>
-      card number: <br> <input type="text" name="cN" value="" placeholder="4925 5555 5555 5555"> <br>
-      CVC: <br> <input type="text" name="CVC" value="" placeholder="123"> <br>
+      comment: <br> <input type="text" name="comment" value="" placeholder="Additional preferences here"> <br>
       <button id="submit" type="submit" name="submit">Submit</button>
     </form>
   </div>
@@ -76,39 +74,39 @@
   <div class="overpara">
     <div class="para" id="premiere">
       <h2>[Premiere Prices]</h2>
-      <div class="underpara" id=""><h3>Video >= 5 Min</h3> <p>Edit a video up to 5 minutes.</p><h3>200kr/hr</h3><button id="vu5" type="submit" name="vu5" action="vu5.php"><b>Buy</b></button></div>
-      <div class="underpara" id=""><h3>Video >= 10 Min</h3> <p>Edit a video up to 10 minutes.</p><h3>150kr/hr</h3><button id="vu10" type="submit" name="vu10" action="vu10.php"><b>Buy</b></button></div>
-      <div class="underpara" id=""><h3>Video < 10 Min</h3> <p>Edit a video longer than 10 minutes.</p><h3>125kr/hr</h3><button id="vo10" type="submit" name="vo10" action ="vo10.php"><b>Buy</b></button></div>
-      <div class="underpara" id=""><h3>Re-edit Video</h3> <p>Re-edit a video.</p><h3>150kr/hr</h3><button id="vr10" type="submit" name="vr10" action="vr10.php"><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Video >= 5 Min</h3> <p>Edit a video up to 5 minutes.</p><h3>200kr/hr</h3><button id="vu5" type="submit" name="vu5"><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Video >= 10 Min</h3> <p>Edit a video up to 10 minutes.</p><h3>150kr/hr</h3><button id="vu10" type="submit" name="vu10"><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Video < 10 Min</h3> <p>Edit a video longer than 10 minutes.</p><h3>125kr/hr</h3><button id="vo10" type="submit" name="vo10"><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Re-edit Video</h3> <p>Re-edit a video.</p><h3>150kr/hr</h3><button id="vr10" type="submit" name="vr10" ><b>Buy</b></button></div>
     </div>
     <div class="para" id="photoshop">
       <h2>[Photoshop Prices]</h2>
       <div class="underpara" id=""><h3>Logo</h3> <p>Custom Logo.</p><h3>200kr/hr</h3><button id="cl" type="submit" name="cl"><b>Buy</b></button></div>
-      <div class="underpara" id=""><h3>Logo touch-up</h3> <p>Touch up on an existing logo.</p><h3>150kr/hr</h3><button id="tl" type="submit" name="tl" action="tl.php"><b>Buy</b></button></div>
-      <div class="underpara" id=""><h3>Portrait Touch-up</h3> <p>Touch up a portrait</p><h3>200kr/hr</h3><button id="tp" type="submit" name="tp" action="tp.php"><b>Buy</b></button></div>
-      <div class="underpara" id=""><h3>Picture touch-up</h3> <p>Touch up an image.</p><h3>200kr/hr</h3><button id="ti" type="submit" name="ti" action="ti.php"><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Logo touch-up</h3> <p>Touch up on an existing logo.</p><h3>150kr/hr</h3><button id="tl" type="submit" name="tl" ><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Portrait Touch-up</h3> <p>Touch up a portrait</p><h3>200kr/hr</h3><button id="tp" type="submit" name="tp" ><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Picture touch-up</h3> <p>Touch up an image.</p><h3>200kr/hr</h3><button id="ti" type="submit" name="ti" ><b>Buy</b></button></div>
     </div>
     <div class="para" id="aftereffects">
       <h2>[After Effects Prices]</h2>
-      <div class="underpara" id=""><h3>Explosion</h3> <p>One explosion effect keyed into your footage.</p><h3>500kr/hr</h3><button id="oe" type="submit" name="oe" action="oe.php"><b>Buy</b></button></div>
-      <div class="underpara" id=""><h3>Stabilizing</h3> <p>Stabilize your footage</p><h3>300kr/hr</h3><button id="sf" type="submit" name="sf" action="sf.php"><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Explosion</h3> <p>One explosion effect keyed into your footage.</p><h3>500kr/hr</h3><button id="oe" type="submit" name="oe" ><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Stabilizing</h3> <p>Stabilize your footage</p><h3>300kr/hr</h3><button id="sf" type="submit" name="sf" ><b>Buy</b></button></div>
     </div>
     <div class="para" id="dynamicwebsite">
       <h2>[Dynamic Website Prices]</h2>
-    <div class="underpara" id=""><h3>Simple PHP</h3> <p>Website w/ simple PHP.</p><h3>400kr/hr</h3><button id="wsp" type="submit" name="wsp" action="wsp.php"><b>Buy</b></button></div>
-    <div class="underpara" id=""><h3>PHP + MySQL</h3> <p>PHP website with MySQL databases.</p><h3>800kr/hr</h3><button id="wspm" type="submit" name="wspm" action="wspm"><b>Buy</b></button></div>
-    <div class="underpara" id=""><h3>PHP + MySQL + Login</h3> <p>PHP website with MySQL databases and login system.</p><h3>1200kr/hr</h3><button id="wspml" type="submit" name="wspml" action="wspml.php"><b>Buy</b></button></div>
+    <div class="underpara" id=""><h3>Simple PHP</h3> <p>Website w/ simple PHP.</p><h3>400kr/hr</h3><button id="wsp" type="submit" name="wsp" ><b>Buy</b></button></div>
+    <div class="underpara" id=""><h3>PHP + MySQL</h3> <p>PHP website with MySQL databases.</p><h3>800kr/hr</h3><button id="wspm" type="submit" name="wspm" ><b>Buy</b></button></div>
+    <div class="underpara" id=""><h3>PHP + MySQL + Login</h3> <p>PHP website with MySQL databases and login system.</p><h3>1200kr/hr</h3><button id="wspml" type="submit" name="wspml" ><b>Buy</b></button></div>
     </div>
     <div class="para" id="staticwebsite">
       <h2>[Static Website Prices]</h2>
-      <div class="underpara" id=""><h3>1 Page HTML + CSS</h3> <p>Custom one-page HTML and CSS website.</p><h3>200kr/hr + hosting</h3><button id="1hc" type="submit" name="1hc" action="1hc.php"><b>Buy</b></button></div>
-      <div class="underpara" id=""><h3>Multi-page HTML +CSS</h3> <p>Custom multi-page HTML and CSS website</p><h3>175kr/hr + hosting + 100kr/page</h3><button id="xhc" type="submit" name="xhc" action="xhc.php"><b>Buy</b></button></div>
-      <div class="underpara" id=""><h3>1 Page HTML + CSS + JS</h3> <p>Custom one-page HTML, CSS and Javascript website.</p><h3>275kr/hr + hosting</h3><button id="1hcj" type="submit" name="1hcj" action="1hcj.php"><b>Buy</b></button></div>
-      <div class="underpara" id=""><h3>Multi-Page HTML + CSS + JS</h3> <p>Custom multi-page HTML, CSS and Javascript website.</p><h3>275kr/hr + hosting + 175kr/page</h3><button id="xhcj" type="submit" name="xhcj" action="xhcj.php"><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>1 Page HTML + CSS</h3> <p>Custom one-page HTML and CSS website.</p><h3>200kr/hr + hosting</h3><button id="onehc" type="submit" name="onehc" ><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Multi-page HTML +CSS</h3> <p>Custom multi-page HTML and CSS website</p><h3>175kr/hr + hosting + 100kr/page</h3><button id="xhc" type="submit" name="xhc" ><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>1 Page HTML + CSS + JS</h3> <p>Custom one-page HTML, CSS and Javascript website.</p><h3>275kr/hr + hosting</h3><button id="onehcj" type="submit" name="onehcj" ><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>Multi-Page HTML + CSS + JS</h3> <p>Custom multi-page HTML, CSS and Javascript website.</p><h3>275kr/hr + hosting + 175kr/page</h3><button id="xhcj" type="submit" name="xhcj" ><b>Buy</b></button></div>
     </div>
     <div class="para" id="softwarehelp">
       <h2>[General Software Help]</h2>
-      <div class="underpara" id=""><h3>General software help</h3> <p>Help with fixing software related problems.</p><h3>300kr/hr</h3><button id="sp" type="submit" name="sp" action="sp.php"><b>Buy</b></button></div>
+      <div class="underpara" id=""><h3>General software help</h3> <p>Help with fixing software related problems.</p><h3>300kr/hr</h3><button id="sp" type="submit" name="sp" ><b>Buy</b></button></div>
     </div>
   </div>
   <div class="midimg"id="fourthimg"></div>
@@ -116,7 +114,7 @@
     <p>©Erik Skår - 2017</p>
   </div>
   <?php
-
+	  
    ?>
 </body>
 </html>

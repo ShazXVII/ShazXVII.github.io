@@ -23,9 +23,11 @@ $(document).ready(function(){
     $("#totallyhiddendiv").hide();
   });
   $(".underpara").children().click(function(){
-    var buybtn = [vu5, vu10, vo10, vr10, tl, tp, ti, oe, sf, wsp, wspm, wspml, 1hc, xhc, 1hcj, xhcj, sp];
+    var buybtn = [vu5, vu10, vo10, vr10, tl, tp, ti, oe, sf, wsp, wspm, wspml, onehc, xhc, onehcj, xhcj, sp];
+	var buybtn2 = ["vu5", "vu10", "vo10", "vr10", "tl", "tp", "ti", "oe", "wsp", "wspm", "wspml", "onehc", "xhc", "onehcj", "xhcj", "sp"]
     var x = this.id;
     var xv2 = buybtn.indexOf(x);
-    $("#submit").attr("action", buybtn[xv2]); 
+	console.log(x);
+    $("#submitform").attr("action", this.id+(".php")); 
   });
 });
