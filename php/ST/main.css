@@ -93,7 +93,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
-  background-image: url("http://www.drodd.com/images15/sports11.jpg");
+  background-image: url("gym.jpg");
   height: 70vh;
   width: 100%;
 }
@@ -120,7 +120,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
-  background-image: url("http://www.theblissery.com/wp-content/uploads/2013/11/ScienceDesign_Header21-1136x492.jpg");
+  background-image: url("http://byasen.vgs.no/upload/By%C3%A5sen/aktuelltbilder/Besok_Fra_Atlanten/sakbilde2.jpg");
   height: 70vh;
   width: 100%;
 }
@@ -129,7 +129,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
-  background-image: url("http://schoolweb.tdsb.on.ca/portals/yorkmillsci/images/Social%20Sciences/Social_Sciences_and_Humanities_wordle.png");
+  background-image: url("http://byasen.vgs.no/upload/By%C3%A5sen/aktuelltbilder/Interasjonalt%20bes%C3%B8k/Bilde%201.jpg");
   height: 70vh;
   width: 100%;
 }
@@ -171,5 +171,16 @@ iframe {
 }
 .underflex:hover {
   cursor: pointer;
+}
+#samffag .underflex, #rfag .underflex {
+  width: 50%;
+}
+#warningheader {
+  background-color: red;
+  color: white;
+  position: fixed;
+  width: 100%;
+  padding: 0em;
+  margin-top: 3em;
 
 }

@@ -16,4 +16,10 @@ $(document).ready(function(){
     $(this).addClass("linkactive");
     $(this).siblings().removeClass("linkactive");
   });
+  $("button").click(function() {
+    $("#totallyhiddendiv").show();
+  });
+  $("#close").click(function() {
+    $("#totallyhiddendiv").hide();
+  });
 });

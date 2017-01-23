@@ -151,3 +151,23 @@ button:hover {
   color: white;
   cursor: pointer;
 }
+#totallyhiddendiv {
+  display: none;
+  position: fixed;
+  width: 50%;
+  margin: auto;
+  height: 50%;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 25%;
+  margin-top: 25vh;
+  border: 5px solid #333;
+  text-align: center;
+}
+#close {
+  float: right;
+  padding-right: 0.5em;
+}
+#close:hover {
+  cursor: pointer;
+}
