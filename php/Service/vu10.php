@@ -19,7 +19,7 @@
     $etternavn=$_GET["lName"];
     $email=$_GET["email"];
 	$comment=$_GET["comment"];
-	$type= "Video under 5 minutes";
+	$type= "Video under 10 minutes";
   }
   else
   {

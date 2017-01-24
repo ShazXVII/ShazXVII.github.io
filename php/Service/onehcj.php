@@ -1,4 +1,3 @@
-
 <body>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +18,7 @@
     $etternavn=$_GET["lName"];
     $email=$_GET["email"];
 	$comment=$_GET["comment"];
-	$type= "Video under 5 minutes";
+	$type= "1 HTML + CSS + JS";
   }
   else
   {
