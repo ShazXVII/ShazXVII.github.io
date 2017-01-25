@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+tr, th, td, table {
+  border: 1px solid #333;
+  border-collapse: collapse;
+}
+table {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+th, td {
+  padding: 0.75em;
+}
+.header {
+  background-color: green;
+  width: 100%;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+}
+.header p {
+  text-transform: uppercase;
+  padding: 1em;
+  margin: 0;
+}
+button {
+  text-transform: uppercase;
+  width: 20%;
+  margin-left: 50%;
+}
+.btn {
+  width: 100%;
+}

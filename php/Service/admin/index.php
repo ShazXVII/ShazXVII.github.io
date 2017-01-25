@@ -18,30 +18,10 @@
   $bruker = "ersk";
   $passord = "2gtur1";
   $database = "ersk";  $kobling = new mysqli($server, $bruker, $passord, $database);
-  if(isset($_GET["submit"]))
-  {
-    $fornavn=$_GET["fName"];
-    $etternavn=$_GET["lName"];
-    $email=$_GET["email"];
-	$comment=$_GET["comment"];
-  }
-  else
-  {
-      echo "you failed;";
-    }
-
   if ($kobling->connect_error){
     die("Noe gikk galt" . $kobling->connect_error);
     }
 
-  $sql = "INSERT INTO service (fornavn, etternavn, email, comment, type) VALUES ('" . $fornavn . "', '$etternavn', '$email', '$comment', 'Video under 5 minutes');";
-
-  if($kobling->query($sql) == TRUE) {
-    echo "Ny post lagt til <br>";
-  }
-  else {
-    echo "feil: " . $sql . "<br>" . $kobling->error;
-  }
 
   $sql = "SELECT fornavn, etternavn, email, comment, type FROM service";
   $result = $kobling->query($sql);

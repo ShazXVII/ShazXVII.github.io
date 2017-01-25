@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile /home/ersk/public_html/php/Service/admin/.htpasswd
+require valid-user
+ErrorDocument 401 /home/ersk/public_html/error401.html
