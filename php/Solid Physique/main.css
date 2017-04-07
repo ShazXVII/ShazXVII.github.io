@@ -12,6 +12,14 @@ body {
   background-attachment: fixed;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+#topimg p {
+  padding: 3em;
+}
+#c2, #c4 {
+  text-align: right;
 }
 #main {
   width: 100%;
@@ -21,7 +29,7 @@ body {
   border-top: 1px black solid;
 
 }
-#main p {
+ p {
   margin: 0;
   letter-spacing: 2px;
   color: #333;
@@ -45,6 +53,11 @@ h1, h2 {
 #about p {
   max-width: 40%;
 }
+#ab1 {
+  border-right: 1px solid #AAA;
+  padding-right: 1em;
+}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -62,31 +75,54 @@ h1, h2 {
 .hiddenflex p {
   padding-left: 0;
 }
-#footer {
+#footer, #underfooter {
   background-color: #EEE;
   width: 100%;
   text-align: center;
   font-size: 120%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 #footer p {
   margin: 0;
   padding: 0;
-  padding-bottom: 2em;
-  padding-top: 2em;
+}
+#underfooter {
+  background-color: #AAA;
+}
+#underfooter p {
+  color: #white;
+}
+.f {
+  border-right: 1px solid #AAA;
+  padding: 2em;
+  margin: 2em;
+  width: 40%;
+}
+.fx {
+  padding: 2em;
+  margin: 2em;
+  width: 60%;
+}
+.fy {
+  width: 100%;
 }
 .midimg {
   background-repeat: no-repeat;
-  width: 100%;
+  width: 50%;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
-  height: 60vh;
+  height: 80vh;
+  float: left;
 
 }
 #first {
-  background-image: url("gym.jpg");
+  background-image: url("park.JPG");
 }
 #second {
-  background-image: url("logowall.png");
+  background-image: url("inne.JPG");
 }
 .para, .flex {
   margin-bottom: 3em;
@@ -111,4 +147,8 @@ h1, h2 {
   background-color: white;
   color: #333 !important;
   cursor: pointer;
+}
+.vid {
+  display: flex;
+  justify-content: center;
 }

@@ -164,10 +164,45 @@ button:hover {
   border: 5px solid #333;
   text-align: center;
 }
-#close {
+.close {
   float: right;
   padding-right: 0.5em;
 }
-#close:hover {
+.close:hover {
   cursor: pointer;
+}
+#login:hover {
+  cursor: pointer;
+}
+#loginbtn {
+  color: blue !important;
+}
+#loginbtn:hover {
+  cursor: pointer;
+}
+#totallyhiddendiv2 {
+  display: none;
+  position: fixed;
+  width: 50%;
+  margin: auto;
+  height: 50%;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 25%;
+  margin-top: 25vh;
+  border: 5px solid #333;
+  text-align: center;
+}
+#youneedto {
+  display: none;
+  position: fixed;
+  width: 50%;
+  margin: auto;
+  height: 50%;
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 25%;
+  margin-top: 25vh;
+  border: 5px solid #333;
+  text-align: center;
 }

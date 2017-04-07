@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
   <title>Document</title>
 </head>
 <body>
   <div class="main">
+    <h1>Legg til lekse/prøve</h1>
     <form class="" action="receive.php" method="post">
-      Dato<input type="text" name="dato" value="" placeholder="dd/mm/yy"> <br>
-      Dag <select class="" name="day">
+      <input type="text" name="dato" value="" placeholder="dd/mm/yyyy">
+      <select class="" name="day">
         <option value="mandag">Mandag</option>
         <option value="tirsdag">Tirsdag</option>
         <option value="onsdag">Onsdag</option>
@@ -18,18 +20,39 @@
         <option value="fredag">Fredag</option>
         <option value="lordag">Lørdag</option>
         <option value="sondag">Søndag</option>
-      </select> <br>
-      Fag <select class="" name="subject">
+      </select>
+      <select class="" name="subject" id="subject">
           <option value="norsk">Norsk</option>
           <option value="historie">Historie</option>
           <option value="r1">R1</option>
           <option value="s1">S1</option>
+          <option value="p2">2P</option>
           <option value="geofag">Geofag</option>
-          <option value="it1">IT1</option>
-      </select> <br>
-      Info <br> <textarea name="info" rows="8" cols="80"></textarea> <br>
-      <input type="submit" name="submit" value="submit">
+          <option value="Informasjonsteknologi 1">IT1</option>
+          <option value="Markedsføring og Ledelse">Markedsføring og Ledelse</option>
+          <option value="engelsk">Internasjonal Engelsk</option>
+          <option value="psykologi">Psykologi</option>
+          <option value="gym">Gym</option>
+      </select>
+      <select class="" name="block" id="block">
+        <option value="blokk1">Blokk 1</option>
+        <option value="blokk2">Blokk 2</option>
+        <option value="blokk3">Blokk 3</option>
+        <option value="blokk4">Blokk 4</option>
+        <option value="fellesfag">Fellesfag</option>
+      </select>
+      <input type="text" name="info" value="" placeholder="Additional info">
+      <br> <input type="submit" name="submit" value="submit" id="submit">
     </form>
   </div>
+  <script type="text/javascript">
+    function velgFag() {
+        var subject = document.getElementById('subject').value;
+        var block = document.getElementById('block').value;
+        if (subject == "norsk") {
+          block = "fellesfag";
+        }
+    }
+  </script>
 </body>
 </html>

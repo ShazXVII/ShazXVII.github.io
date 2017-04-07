@@ -27,9 +27,11 @@ th, td {
 }
 button {
   text-transform: uppercase;
-  width: 20%;
-  margin-left: 50%;
+  margin: auto;
+  padding: 1em;
 }
 .btn {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }

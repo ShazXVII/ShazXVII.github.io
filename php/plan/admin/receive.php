@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>send nudes</title>
+	</head>
+	<body>
+
+
 <?php
 // Her deklareres systemvariabler vi skal bruke mot MySQL-basen.
 $server = "localhost";
@@ -14,8 +23,9 @@ if(isset($_POST["submit"])) {
 	$date="$parts[2]-$parts[1]-$parts[0]";
 	$day=$_POST["day"];
 	$subject=$_POST["subject"];
+	$block=$_POST["block"];
 	$info=$_POST["info"];
-	}
+}
 
 // Hvis noe gikk galt, lager denne en feilmelding. Uten denne, får du ingen :-)
 if ($kobling->connect_error) 	{
@@ -23,11 +33,11 @@ if ($kobling->connect_error) 	{
 	}
 
 // SQL-spørring. Helt samme syntax som da vi skrev spørringen inn i kommandolinja
-$sql = "INSERT INTO plan (dato, day, subject, info) VALUES ('$date', '$day', '$subject', '$info')";
+$sql = "INSERT INTO planx (dato, day, subject, block, info) VALUES ('$date', '$day', '$subject', '$block', '$info');";
 
 // Sjekker om alt gikk bra. Feilmelding ellers.
 if ($kobling->query($sql) == TRUE) {
-	echo "Ny post lagt til";
+	echo "it wurkd";
 	}
 	else {
 		echo "Feil: " . $sql . "<br>" . $kobling->error;
@@ -35,3 +45,5 @@ if ($kobling->query($sql) == TRUE) {
 // Kopling lukkes.
 $kobling->close();
 ?>
+</body>
+</html>

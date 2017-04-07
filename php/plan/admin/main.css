@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+.main {
+  text-align: center;
+}
+#submit {
+  padding: 1em;
+  width: 55%;
+  background-color: #532534;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-size: 500%;
+  transition: none 200ms ease-out;
+  transition-property: color, background, border;
+  text-shadow: none;
+  box-shadow: none;
+  margin-top: 1em;
+}
+#submit:hover {
+  background-color: white;
+  color: #532534;
+  cursor: pointer;
+  transition: none 200ms ease-out;
+  transition-property: color, background, border;
+  border: 10px solid #532534;
+}
+h1 {
+  color: #532534;
+}

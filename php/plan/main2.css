@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  color: #333;
+}
+#main {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+table, th, td {
+  border: 1px solid #AAA;
+  border-collapse: collapse;
+}
+table {
+  width: 100%;
+}
+th, td {
+  padding: 1em;
+}
+table {
+  text-transform: capitalize;
+}
