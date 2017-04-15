@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HiO Oasis</title>
+  <link rel="stylesheet" href="golftwilight.css">
+</head>
+<body>
+  <main>
+    <h1>Twilight</h1>
+    <div class="content">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+      <img class="mySlides" src="white.png">
+
+      <div class="btn-content">
+        <button class="w3-btn" onclick="plusDivs(-1)">&#10094; Prev</button>
+        <button class="w3-btn" onclick="plusDivs(1)">Next &#10095;</button> <br>
+
+        <button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+        <button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+        <button class="w3-btn demo" onclick="currentDiv(3)">3</button>
+        <button class="w3-btn demo" onclick="currentDiv(1)">4</button>
+        <button class="w3-btn demo" onclick="currentDiv(2)">5</button>
+        <button class="w3-btn demo" onclick="currentDiv(3)">6</button>
+        <button class="w3-btn demo" onclick="currentDiv(1)">7</button>
+        <button class="w3-btn demo" onclick="currentDiv(2)">8</button>
+        <button class="w3-btn demo" onclick="currentDiv(3)">9</button>
+        <button class="w3-btn demo" onclick="currentDiv(1)">10</button>
+        <button class="w3-btn demo" onclick="currentDiv(2)">11</button>
+        <button class="w3-btn demo" onclick="currentDiv(3)">12</button>
+        <button class="w3-btn demo" onclick="currentDiv(1)">13</button>
+        <button class="w3-btn demo" onclick="currentDiv(2)">14</button>
+        <button class="w3-btn demo" onclick="currentDiv(3)">15</button>
+        <button class="w3-btn demo" onclick="currentDiv(1)">16</button>
+        <button class="w3-btn demo" onclick="currentDiv(2)">17</button>
+        <button class="w3-btn demo" onclick="currentDiv(3)">18</button>
+
+      </div>
+    </div>
+    <div class="back">
+      <a href="golfindex.html">Back</a>
+    </div>
+  </main>
+  <script>
+      var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+
+  </script>
+</body>
+</html>

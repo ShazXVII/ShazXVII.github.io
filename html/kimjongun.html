@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KJU Gallery</title>
+  <link rel="stylesheet" href="kimjongun.css">
+</head>
+<body>
+  <div class="top">
+  <h1 class="toptext">Kim Jong-Un</h1>
+  </div>
+  <div class="main">
+    <img src="https://i.ytimg.com/vi/50RZrJSC0Cs/maxresdefault.jpg" alt="" class="mySlides">
+    <img src="http://media.gizmodo.co.uk/wp-content/uploads/2015/05/kim-jong-un.jpg" alt="" class="mySlides">
+    <img src="https://i.ytimg.com/vi/SxMrq6YTgbQ/maxresdefault.jpg" alt="" class="mySlides">
+    <img src="http://t.fod4.com/t/37161c1a50/c1920x1080_67.jpg" alt="" class="mySlides">
+    <img src="https://tribkiah.files.wordpress.com/2013/05/kim.jpg?quality=85&strip=all" alt="" class="mySlides">
+    <img src="http://quintype-01.imgix.net/thequint/2015-06/3315fedb-be28-46c4-8c97-dc7af21de8d7/North%20Korea1.jpg" alt="" class="mySlides">
+    <img src="http://sf.co.ua/13/07/wallpaper-2902773.jpg" alt="" class="mySlides">
+    <img src="http://www.trbimg.com/img-577d6dee/turbine/la-fg-northkorea-sanctions-20160706-snap" alt="" class="mySlides">
+    <img src="http://videos.usatoday.net/Brightcove2/29906170001/2015/05/29906170001_4245552088001_thumb-Buzz60video3244588121878539322.jpg" alt="" class="mySlides">
+    <img src="https://ichef.bbci.co.uk/images/ic/1920x1080/p03whjjt.jpg" alt="" class="mySlides">
+    <img src="http://www.vexradio.com/wp-content/uploads/2015/09/north-korea-threatens-the-white-house-and-pentagon-following-the-sony-hacks-youtube-thumbnail.jpg" alt="" class="mySlides">
+    <img src="http://elestimulo.com/wp-content/uploads/2016/02/Los-mayores-temores-del-dictador-norcoreano-Kim-Jong-un.jpg" alt="" class="mySlides">
+    <img src="http://tv.aftonbladet.se/multimedia/image/121718/w1920h1080.jpeg" alt="" class="mySlides">
+    <img src="https://i1.imgiz.com/rshots/9167/kuzey-kore-lideri-kim-jong-un_9167580-16590_1920x1080.jpg" alt="" class="mySlides">
+    <img src="http://www.blogcdn.com/slideshows/images/slides/296/922/1/S2969221/slug/l/north-korea-anniversary-1.jpg" alt="" class="mySlides">
+    <img src="http://media2.s-nbcnews.com/i/MSNBC/Components/Video/__NEW/x_lon_kji2_140415.jpg" alt="" class="mySlides">
+  </div>
+  <div class="bot">
+    <h1>Image Gallery</h1>
+  </div>
+  <script>
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 3500); // Change image every 2 seconds
+  }
+  </script>
+  <script type = "text/javascript">
+    function zoom() {
+      if (screen.width >= 1920) {
+        body.style.zoom = 1.5;
+      } else {
+        body.style.zoom = 1;
+              }
+    }
+  </script>
+</body>
+</html>

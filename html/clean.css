@@ -1,0 +1,198 @@
+/* color choices:
+#e81c4f  -  pink
+#00e64d  -  green
+*/
+.header {
+  background-color: white;
+  background-image: url("nordlys.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+  background-size: 100% 100%;
+  font-family: sans-serif;
+}
+.body {
+  font-family: sans-serif;
+}
+.header p {
+  color: white;
+  font: roboto;
+  font-size: 400%;
+  font-weight: lighter;
+}
+.header img {
+  width: 200px;
+  vertical-align: top;
+  display: inline-block;
+}
+.header a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid white;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+  letter-spacing: 2px;
+}
+.header a:hover {
+  background-color: #00e64d;
+  border-color: #00e64d;
+}
+body {
+  font: roboto;
+  zoom: 67%;
+  margin: 0;
+  font-family: sans-serif;
+}
+main {
+  margin: 0 auto;
+  max-width: 50em;
+  color: #555;
+  font-size: 150%;
+  line-height: 1.5;
+  text-decoration: none;
+}
+main h1 {
+  margin-top: 1em;
+  padding-top: 1em;
+  color: #333;
+}
+.share  {
+  margin: 0 auto;
+  max-width: 50em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  border-top: 5em;
+
+}
+.share a {
+  color: #00e64d;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #00e64d;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+.share a:hover {
+  color: white;
+  background-color: #00e64d;
+}
+table img {
+  width: 300px;
+  margin-right: 2em;
+}
+table td {
+  margin-left: auto;
+  padding-left: 6em;
+  width: 50%;
+  text-transform: uppercase;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 15px;
+    border-color: #00e64d;
+    border-width: 4px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.question {
+  color: #00e64d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+table h2 {
+  padding-left:2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+.menu a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: #00e64d;
+  padding: 1em 2em;
+  border-width: 0px;
+  border-color: #00e64d;
+  border-style: solid;
+  letter-spacing: 2px;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+.menu a:hover {
+  background-color: white;
+  color: #00e64d;
+}
+.menu {
+  width:100%;
+  margin-top: 1em;
+  text-align: center;
+  font-size: 150%;
+}
+strong {
+  color: #00e64d;
+}
+.top a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 90%;
+  background-color: #00e64d;
+  padding: 0.5em 1em;
+  border-width: 1px;
+  border-color: #00e64d;
+  border-style: solid;
+  letter-spacing: 2px;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+  margin-left: 22em;
+}
+.top a:hover {
+  color: #00e64d;
+  background-color: white;
+}
+.para a {
+  text-decoration: none;
+}
+#bot {
+  padding-bottom: 5em;
+  margin-top: 3em;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="drop.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+  <div class="main">
+    <p class="drop">Drop It!</p>
+  </div>
+  <div class="audio">
+
+  </div>
+  <script>
+    $( ".drop" ).click(function() {
+      var drop = Math.floor(Math.random() * 3) + 1
+      var downlike = new Audio("downlike.mp3");
+      var surface = new Audio("surface.mp3");
+      var whenim = new Audio("whenim.mp3");
+      if (drop == 1) {
+        whenim.play();
+        surface.pause();
+        surface.currentTime = 0;
+        downlike.pause();
+        whenim.currentTime = 0;
+      }
+      else if (drop == 2) {
+        whenim.pause();
+        whenim.currentTime = 0;
+        surface.play();
+        downlike.pause();
+        downlike.currentTime = 0;
+      }
+      else if (drop == 3) {
+        whenim.pause();
+        whenim.currentTime = 0;
+        surface.pause();
+        surface.currentTime = 0;
+        downlike.play();
+      }
+      console.log(drop)
+    });
+  </script>
+</body>
+</html>

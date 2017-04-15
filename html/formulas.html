@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="formulas.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <title>Formula$</title>
+</head>
+<body>
+  <div class="header">
+    <h1 href="formulas.html">Formula$</h1>
+  </div>
+  <div class="main">
+    <div class="subjects">
+      <button id="math" onclick="showMath()">Math</button>
+      <button id="physics" onclick="showPhysics()">Physics</button>
+      <button id="chemistry" onclick="showChemistry()">Chemistry</button>
+    </div>
+    <div class="content">
+      <div class="math">
+        <div class="curriculum">
+          <h2>Geometry</h2>
+          <h3>Circle</h3>
+          <p class="formula">A = r^2*π</p>
+          <form class="varInput" name="circleForm" action="" method="post">
+            <input type="text" id="varRadius" placeholder="Insert radius" oninput="circleA()"> =
+            <input type="text" id="resultSaC" placeholder="Area of Circle">m²
+          </form>
+          <p class="formula">O = d*π</p>
+          <form class="varInput" name="circleForm" action="" method="post">
+            <input type="text" id="varDiameter" placeholder="Insert diameter" oninput="circleO()"> =
+            <input type="text" id="resultOaC" placeholder="Circumference of Circle">m
+          </form>
+          <h3>Parallellogram</h3>
+          <p class="formula">A = g*h/2*2</p>
+          <form class="varInput" name="circleForm" action="" method="post">
+            <input type="text" id="varG" placeholder="Insert groundline" oninput="poGA()">
+            <input type="text" id="varH" placeholder="Insert height" oninput="poGA()"> =
+            <input type="text" id="resultPoG" placeholder="Area of Parallellogram">m²
+          </form>
+          <p class="formula">O = 2g + 2s</p>
+          <form class="varInput" name="circleForm" action="" method="post">
+            <input type="text" id="varG2" placeholder="Insert ground line" oninput="poGO()">
+            <input type="text" id="varS" placeholder="Insert side line" oninput="poGO()"> =
+            <input type="text" id="resultPoGO" placeholder="Circumference of Parallellogram">m
+          </form>
+          <h3>Trapezoid</h3>
+          <p class="formula">A = a+b/2*h</p>
+          <form class="varInput" name="circleForm" action="" method="post">
+            <input type="text" id="varA" placeholder="Insert bottom line" oninput="TrA()">
+            <input type="text" id="varB" placeholder="Insert top line" oninput="TrA()">
+            <input type="text" id="varH2" placeholder="Insert height" oninput="TrA()"> =
+            <input type="text" id="resultTrA" placeholder="Area of Trapezoid">m²
+          </form>
+        </div>
+
+      </div>
+      <div class="physics">
+        <div class="curriculum">
+          <h2>Waves</h2>
+          <h3>Wave frequency</h3>
+          <p class="formula">f = 1cycle/T</p>
+          <form class="varInput" name="circleForm" action="" method="post">
+            <input type="text" id="varCycle" placeholder="Insert cycle" oninput="wF()">
+            <input type="text" id="varPeriod" placeholder="Insert period" oninput="wF()"> =
+            <input type="text" id="resultwF" placeholder="Wave Frequency">Hz
+          </form>
+          <h3>Wave speed</h3>
+          <p class="formula">v = f * λ</p>
+          <form class="varInput" name="circleForm" action="" method="post">
+            <input type="text" id="varFrequency" placeholder="Insert frequency" oninput="wS()">
+            <input type="text" id="varDistance" placeholder="Insert distance" oninput="wS()"> =
+            <input type="text" id="resultwS" placeholder="Wave Speed">m/s
+          </form>
+        </div>
+      </div>
+      <div class="chemistry">
+        <div class="curriculum">
+          <h2>Atoms</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>©Erik Skår - 2016</p>
+  </div>
+  <script>
+    var pi = Math.PI;
+    function showMath() {
+      $('.math').siblings().hide()
+      $('.math').show()
+    }
+    function showPhysics() {
+      $('.physics').siblings().hide()
+      $('.physics').show()
+    }
+    function showChemistry() {
+      $('.chemistry').siblings().hide()
+      $('.chemistry').show()
+    }
+    function circleA() {
+      var var1 = document.getElementById('varRadius').value;
+      var output = var1*var1*pi;
+      document.getElementById('resultSaC').value = output;
+    }
+    function circleO() {
+      var var1 = document.getElementById('varDiameter').value;
+      var output = var1*pi;
+      document.getElementById('resultOaC').value = output;
+    }
+    function poGA() {
+      var var1 = document.getElementById('varG').value;
+      var var2 = document.getElementById('varH').value;
+      var output = var1*var2;
+      document.getElementById('resultPoG').value = output;
+    }
+    function poGO() {
+      var var1 = document.getElementById('varG2').value;
+      var var2 = document.getElementById('varS').value;
+      var output = var1*2 + var2*2;
+      document.getElementById('resultPoGO').value = output;
+      console.log(var1, var2);
+    }
+    function TrA() {
+      var var1 = document.getElementById('varA').value;
+      var var2 = document.getElementById('varB').value;
+      var var3 = document.getElementById('varH2').value;
+      var firstOP = parseInt(var1) + parseInt(var2);
+      var output = firstOP/2*var3;
+      document.getElementById('resultTrA').value = output;
+    }
+    function wS() {
+      var var1 = document.getElementById('varFrequency').value;
+      var var2 = document.getElementById('varDistance').value;
+      var output = var1*var2;
+      document.getElementById('resultwS').value = output;
+    }
+    function wF() {
+      var var1 = document.getElementById('varPeriod').value;
+      var var2 = document.getElementById('varCycle').value;
+      var output = var2/var1;
+      document.getElementById('resultwF').value = output;
+    }
+  </script>
+</body>
+</html>

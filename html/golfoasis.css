@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+main {
+background-image: url("https://i.ytimg.com/vi/aCtvqZD0DY4/maxresdefault.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center;
+margin: 0 auto;
+padding-top: 1vw;
+padding-bottom: 5vw;
+text-align: center;
+
+}
+main h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 300%;
+  letter-spacing: 20px;
+  -webkit-text-stroke: 1px orange;
+  text-shadow: 2px 2px #ff0000;
+
+}
+main a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: orange;
+  padding: 1em 2em;
+  border: 1px solid white;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+  letter-spacing: 2px;
+}
+main a:hover {
+  background-color: orange;
+  color: white;
+  border: 1px solid orange;
+}
+.content {
+  background-color: orange;
+  width: 50%;
+  height: 32vw;
+  margin-left: 25%;
+  border-radius: 10px;
+}
+.mySlides {
+  max-width: 90%;
+  padding-top: 2em;
+  margin-left: 2em;
+}
+.btn-content {
+}
+.back {
+  margin-top: 2em;
+}
