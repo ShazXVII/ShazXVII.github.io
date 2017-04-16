@@ -12,7 +12,13 @@ class DiceRollCommand extends commando.Command {
 
   async run(message, args) {
     var roll =  Math.floor(Math.random() * 20) +1;
-    message.reply("You rolled a" + roll);
+    if (roll == 8 || roll == 11 || roll == 18 ) {
+      message.reply("You rolled an " + roll);
+    }
+    else {
+      message.reply("You rolled a " + roll);
+    }
+
   }
 }
 module.exports = DiceRollCommand;
