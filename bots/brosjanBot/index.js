@@ -6,6 +6,25 @@ const token = 'MzAyOTUyMDUyNDI0ODM1MDkz.C9RESw.bWj47osBihz1B6w0BOgssqZV8_0';
 
 const prefix = "ß";
 
+const RAMbed = new Discord.RichEmbed()
+  .setTitle('RAM Usage')
+  .setAuthor('brosjanBot')
+  .setColor(0x00AE86)
+  .setDescription(`I am currently using: ${((process.memoryUsage().heapUsed / 1024) / 1024).toFixed(2)} mb of RAM.`)
+  .setTimestamp();
+
+const help = new Discord.RichEmbed()
+  .setTitle('Hello!')
+  .setAuthor('brosjanBot')
+  .setColor(0x00AE86)
+  .setDescription(`Beep-boop. I am brosjanBot. I am here to help and shit.`)
+  .addField('Prefix', 'ß')
+  .addField('Commands', ' - help\n- say\n- kick\n- turbosnus\n- ram\n- ayy\n- weeb\n- avatar\n- thanks\n')
+  .addField('Owner', '@Toast#2554')
+  .addField('Kool Kids Ke$ha Klub', 'https://discord.gg/aEQDKVY');
+
+
+
 bot.on('ready', () => {
   console.log('Broosjan!');
   bot.user.setGame("with myself");
@@ -24,6 +43,10 @@ bot.on('message', message => {
   command = command.slice(prefix.length);
 
   let args = message.content.split(" ").slice(1);
+
+  if (command === 'help') {
+    message.channel.sendEmbed(help);
+  }
 
 
   if (command === "say") {
@@ -58,6 +81,10 @@ bot.on('message', message => {
     }
   }
 
+  if (command === "ram") {
+    message.channel.sendEmbed(RAMbed);
+  }
+
   if (command === "ayy") {
     message.channel.sendMessage("lmao");
   }
@@ -67,8 +94,19 @@ bot.on('message', message => {
   if (command === "avatar") {
     message.reply(message.author.avatarURL);
   }
-});
+  if (command === ('thanks') ) {
+    message.channel.sendMessage('No worries, fam');
+  }
+  if (command === 'uptime') {
+    let uptime = new Discord.RichEmbed()
+    .setTitle('Uptime')
+    .setAuthor('brosjanBot')
+    .setColor(0x00AE86)
+    .setDescription(`brosjanBot has been up for ${bot.uptime/1000} seconds`);
 
+    message.channel.sendEmbed(uptime);
+  }
+});
 
 
 bot.login(token);
