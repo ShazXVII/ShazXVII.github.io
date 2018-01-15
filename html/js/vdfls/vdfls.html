@@ -16,8 +16,8 @@
     <video id="vid" src="original.mp4" autoplay width="800;" height="475;" loop>
     </video>
     <h2 id="subt">Original</h2>
-    <button type="button" title="Switch to audio files" id="swtch" name="button" onclick="swtch()">AUDIO FILES &#8634;</button>
-    <button type="button" id="chng" title="Switch between the different video files" name="button" onclick="change()">CHANGE VIDEO &#8634;</button>
+    <button type="button" title="Switch to audio files" id="swtch" name="button" onclick="swtch()">AUDIO FILES &#8634;</button> <!-- denne er fixed -->
+    <button type="button" id="chng" title="Switch between the different video files" name="button" onclick="change()">CHANGE VIDEO &#8634;</button> <!-- denne er relative -->
   </div>
   <script type="text/javascript">
   var x = 1;
@@ -25,7 +25,7 @@
   var z = 1;
   var vids = ["original.mp4", "newfile.mp4", "loop.mp4"];
   var titles = ["Original", "Edited", "Bonus"];
-  function change() {
+  function change() { //gjør til at den alltid finner filene.
     if (x > 2) {
       x = 0;
     }
@@ -33,7 +33,7 @@
     document.querySelector("#subt").innerHTML = titles[x];
     x++;
   }
-  function swtch() {
+  function swtch() { //endrer fra video til audio
     if (z == 1) {
       document.querySelector("#swtch").innerHTML = "VIDEO FILES &#8634;";
       document.querySelector("#swtch").title = "Switch to video files";
@@ -50,7 +50,7 @@
       document.querySelector("#h1").innerHTML = "ADFLS";
       y = 1;
       z = 0;
-    } else if (z == 0) {
+    } else if (z == 0) { // endrer fra audio til video
         document.querySelector("#swtch").innerHTML = "AUDIO FILES &#8634;";
         document.querySelector("#swtch").title = "Switch to audio files";
         document.querySelector("#chng").innerHTML = "CHANGE VIDEO &#8634;";
@@ -71,7 +71,7 @@
     }
 
   }
-  function chngaud() {
+  function chngaud() { //bytter fra første audiofilen til den andre og tilbake
     if (y == 1) {
       document.querySelector("#aud").setAttribute("src", "newfile.mp3");
       y = 0;

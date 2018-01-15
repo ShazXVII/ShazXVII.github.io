@@ -38,6 +38,9 @@ audio {
 }
 #swtch {
   margin-right: auto;
+  position: fixed;
+  left: 69%;
+  top: 5px;
 }
 button:hover {
   cursor: pointer;
