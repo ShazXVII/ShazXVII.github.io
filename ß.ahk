@@ -1,3 +1,0 @@
-<^>!s:: 
-	Send, ß
-Return
