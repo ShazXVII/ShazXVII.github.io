@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="particon">
+    <div class="parti">
+      <img id="ro" src="rodt.png" alt="" onclick="presvid()">
+      <p>Rødt</p>
+      <input type="radio" name="parti" value="rodt">
+    </div>
+    <div class="parti">
+      <img id="ho" src="hoyre.png" alt="">
+      <p>Høyre</p>
+      <input type="radio" name="parti" value="hoyre">
+    </div>
+    <div class="parti">
+      <img id="ns" src="ns.png" alt="">
+      <p>Nasjonal Samling</p>
+      <input type="radio" name="parti" value="ns">
+    </div>
+  </div>
+<script type="text/javascript">
+  function presvid() {
+      if (this.id == "ro") {
+      var newCon = document.createElement("video");
+      newCon.width = 320;
+      newCon.height = 180;
+      newCon.src = "rodt.mp4";
+    }
+
+
+    var newDiv = document.createElement("div");
+    newDiv.id = "vidDiv";
+    newDiv.style.position = "fixed";
+    newDiv.style.margin = "auto";
+    newDiv.width = "70%";
+    newDiv.appendChild(newCon);
+    document.body.appendChild(newDiv);
+
+  }
+</script>
+</body>
+</html>

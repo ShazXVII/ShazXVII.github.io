@@ -1,0 +1,15 @@
+#particon {
+  display: flex;
+  width: 100%;
+}
+.parti {
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+  width: 20%;
+  padding: 1em;
+  text-transform: uppercase;
+}
+.parti img {
+  width: 50%;
+}

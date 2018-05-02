@@ -17,21 +17,21 @@
   </div>
 </body>
 <script type="text/javascript">
-  var milli = 00;
-  var seconds = 00;
-  var minutes = 00;
+  var milli = 0;
+  var seconds = 0;
+  var minutes = 0;
   var x = 1;
   setInterval(function() {
     milli+=1;
     document.querySelector("#milli").innerHTML = milli;
     if (milli >=100) {
-      milli = 00;
+      milli = 0;
       seconds +=1;
       document.querySelector("#milli").innerHTML = milli;
       document.querySelector("#seconds").innerHTML = seconds;
     }
     if (seconds>=60) {
-      seconds = 00;
+      seconds = 0;
       minutes+=1;
       document.querySelector("#seconds").innerHTML = seconds;
       document.querySelector("#minutes").innerHTML = minutes;
@@ -39,6 +39,7 @@
   }, 10);
   function addTime() {
     if (x<=25) {
+      console.log("something");
       var addP = document.createElement("p");
       addP.innerHTML = "Round " + x + " - " + minutes + ":" + seconds + ":" + milli;
       x++;
