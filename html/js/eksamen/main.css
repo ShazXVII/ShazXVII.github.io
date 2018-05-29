@@ -1,15 +1,32 @@
-#particon {
-  display: flex;
+body {
+  margin: 0;
+}
+#header {
   width: 100%;
-}
-.parti {
-  margin: auto;
   text-align: center;
-  border: 1px solid black;
-  width: 20%;
-  padding: 1em;
   text-transform: uppercase;
+  background-color: #EEE;
+  color: #333;
 }
-.parti img {
-  width: 50%;
+#header h1 {
+  margin: 0;
+  padding: 0.5em;
+}
+#main {
+  width: 100%;
+  display: flex;
+}
+.flex {
+  width: 25%;
+  background-color: #EEE;
+  height: 50vh;
+  margin: auto;
+  margin-top: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+}
+.flex p {
+  padding-left: 2em;
+  padding-right: 2em;
 }

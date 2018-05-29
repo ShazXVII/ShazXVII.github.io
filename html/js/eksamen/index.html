@@ -8,42 +8,27 @@
   <title>Document</title>
 </head>
 <body>
-  <div id="particon">
-    <div class="parti">
-      <img id="ro" src="rodt.png" alt="" onclick="presvid()">
-      <p>Rødt</p>
-      <input type="radio" name="parti" value="rodt">
+  <div id="header">
+    <h1>Museum</h1>
+  </div>
+  <div id="main">
+    <div class="flex">
+      <h2>Museum 1</h2>
     </div>
-    <div class="parti">
-      <img id="ho" src="hoyre.png" alt="">
-      <p>Høyre</p>
-      <input type="radio" name="parti" value="hoyre">
+    <div class="flex">
+      <h2>Museum 2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quaerat commodi soluta, voluptatem dolore necessitatibus nam amet sunt sapiente adipisci optio, animi molestias delectus repudiandae nihil totam excepturi, id cupiditate.</p>
     </div>
-    <div class="parti">
-      <img id="ns" src="ns.png" alt="">
-      <p>Nasjonal Samling</p>
-      <input type="radio" name="parti" value="ns">
+    <div class="flex">
+      <h2>Museum 3</h2>
     </div>
   </div>
-<script type="text/javascript">
-  function presvid() {
-      if (this.id == "ro") {
-      var newCon = document.createElement("video");
-      newCon.width = 320;
-      newCon.height = 180;
-      newCon.src = "rodt.mp4";
-    }
 
+  <div class="largeflex">
+    
+  </div>
+  <div id="footer">
 
-    var newDiv = document.createElement("div");
-    newDiv.id = "vidDiv";
-    newDiv.style.position = "fixed";
-    newDiv.style.margin = "auto";
-    newDiv.width = "70%";
-    newDiv.appendChild(newCon);
-    document.body.appendChild(newDiv);
-
-  }
-</script>
+  </div>
 </body>
 </html>
