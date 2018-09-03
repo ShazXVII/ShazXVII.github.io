@@ -1,0 +1,11 @@
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/bin/Debug/netcoreapp2.1/myApp.deps.json
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/bin/Debug/netcoreapp2.1/myApp.runtimeconfig.json
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/bin/Debug/netcoreapp2.1/myApp.runtimeconfig.dev.json
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/bin/Debug/netcoreapp2.1/myApp.dll
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/bin/Debug/netcoreapp2.1/myApp.pdb
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.csprojAssemblyReference.cache
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.csproj.CoreCompileInputs.cache
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.AssemblyInfoInputs.cache
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.AssemblyInfo.cs
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.dll
+/home/erik/Documents/ShazXVII.github.io/dotnet/myApp/obj/Debug/netcoreapp2.1/myApp.pdb
