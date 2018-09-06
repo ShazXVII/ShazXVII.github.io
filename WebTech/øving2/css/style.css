@@ -1,0 +1,14 @@
+header {
+  font-family: 'Verdana', sans-serif;
+}
+body {
+  background-color: #333;
+}
+p, h1, h2, li {
+  color: #EEE;
+  font-family: 'Verdana', 'comic sans', sans-serif;
+}
+img {
+  border: 1px solid black;
+  max-width: 150px;
+}
