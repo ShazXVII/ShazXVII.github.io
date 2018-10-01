@@ -1,0 +1,8 @@
+a) Alan Turing er kjent for å være "faren" til moderne datamaskiner. Under andre verdenskrig jobbet han med å dekryptere fiendtlig kommunikasjon og hjalp med å avslutte krigen tidligere enn om han ikke hadde hjulpet til
+
+b) Det mindre kretskortet som kobles inn i hovedkortet kalles et datterkort.
+
+c) CPU står for Central Processing Unit
+
+d) Hvilken som helst byte i minnet kan bli tilgjengelig uten å røre noen andre bytes, og det er der der random kommer inn.
+

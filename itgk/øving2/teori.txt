@@ -1,0 +1,19 @@
+
+a)
+Primærlagring er den raskeste formen for lagring, og holder informasjonen i RAM-en. Den blir slettet hver gang datamaskinen blir slått av. Sekundærlagring er som harddisker og SSD-er hvor informasjonen blir lagret selv om datamaskinen er skrudd av.
+
+b)
+Harddisk og SSD har permanent minne som betyr at den beholder informasjonen etter at datamaskinen blir skrudd av. RAM derimot har volatilt minne som betyr at det blir slettet hver gang datamaskinen blir slått av.
+ 
+RAM også kjent som random access memory kan aksesse tilfeldige plasser i minnet, i motsetning til harddisker og SSDer som har sekvensielt aksess.
+
+c)
+Silisium brukes mye i elektronikk fordi det er billig og man kan dope det med fosfor for å bli en halvleder. Dermed kan det brukes som en transistor.
+
+d)
+En transistor er et komponent som brukes innenfor elektronikk som kan enten fungere som en bryter eller en forsterker. Den består av 3 deler, og er et essensielt komponent i datamaskiner og det jobbes for å gjøre de mindre og mindre.
+
+e)
+(32000*8)/x=40
+x=6400
+Det vil si en hastighet på 6.4kb/s 

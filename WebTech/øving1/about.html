@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="shortcut icon" href="img/webtek.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>img{border: 3px solid black;}</style>
+</head>
+<body>
+  <header>
+    <h1>Erik Mjaaland Skår</h1>
+  </header>
+  <section>
+    <header>
+      <h2>This is me</h2>
+    </header>
+    <img src="img/me.jpg" alt="">
+    <p>I would consider myself pretty good at front-end development, and mediocre at best at back-end. I have a few years of experience with HTML5, CSS and JS, and I've built more websites than I can count. I do have some experience in Python, PHP, Node.js aswell.</p>
+    <p>My expectations to the course are that in the beginning I might find it quite easy, but I do hope that we go into some advanced development later in the course. I think the hardest part will be the theoretical aspects behind the technology such as remembering everything about TCP/IP etc.</p>
+    <p></p>
+  </section>
+  <section>
+    <header>
+      <h2>Questions</h2>
+    </header>
+    <ol>
+      <li>The server is what holds the information that the client wants to access. For instance if I want to visit google.com I would have to send a request to the server to be allowed to access the content on that website. The server can also obtain information from the client if it wants to, often in the form of cookies so that it can store your info for your next visit.</li>
+      <li>The client is the one who requests to obtain the info from the server. If it's a webpage it wants to visit, it will use a browser to access the server, but there are other types as well. If you have a network that doesn't use servers, it will request info from other clients, which means that the information is distributed across every client. This is called P2P or peer-to-peer.</li>
+      <li>An IP address is a unique number for every computer on a network. It's the way computers know who the sender and receiver of data is, and where to send the packets. There are both local and public IP addresses, so that you can either connect to others on the web, or machines on your local network. It is also seperated into IPv4 and IPv6, where IPv4 is the most common, but sooner or later we will run out of IPv4 addresses and we will have to use IPv6 for new clients on the network.</li>
+      <li>DNS stands for "Domain Name System" and it is how we can use URLs instead of IPs to connect to webpages. For instance if I want to connect to google.com I can just type that in the URL bar instead of having to remember an IPv4 address.</li>
+      <li>The Internet is a network that consists of many computers communicating with each other. WWW or "The Web" is an application that runs on the Internet.</li>
+      <li>HTML is a markup-language that tells the browser what the webpage should look like. It also tells it where to find the different files that should be shown, and where it can find the styling in the form of a CSS file.</li>
+    </ol>
+  </section>
+  <section>
+    <header>
+      <h2>Questions 2</h2>
+    </header>
+    <ol>
+      <li>External CSS and inline CSS is overridden by the style="" attribute because that one is the most specific and to override it you would have to use the !important tag in CSS.</li>
+      <li>Id should be used when you want to target only that element specifically. You can only have 1 element with the same ID, and that makes it easier for JS to find out what element to target. Class is used when you want to change several items that should look the same or have the same function. For instance would you use class on a paragraph, so that the style is transferred over to the other paragraphs that you make later.</li>
+      <li>RGBA stands for Red, Green, Blue, Alpha, which are the different color values that every color on the screen consists of. Alpha is how transparent the color should be. It can display 4,294,967,296 different colors.</li>
+      <li>We include the CSS files in the head instead of the body because the stuff inside the head tag is loaded before the body tag. Therefore by having the css in the head, you make sure that the user gets the style instantly instead of having a blank page for a small time.</li>
+      <li>For targeting the p elements within an article tag you can either write "article>p" or "article p"</li>
+    </ol>
+  </section>
+  <footer>
+    <p>Created by Erik Skår</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Verdana', 'Sans-serif';
+}
+
+/*Part 3 footer*/
+
+.wrapper {
+  min-height: calc(100vh - 50px);
+}
+h1 {
+  padding: 0;
+  margin: 0;
+}
+footer {
+  height: 50px;
+  background-color: #333;
+  text-align: center;
+}
+footer p {
+  color: #EEE;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+/* Part 4 */
+
+ul {
+  list-style-type: square;
+}
+li ul li:last-child {
+  color: red;
+}

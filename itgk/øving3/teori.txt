@@ -1,0 +1,24 @@
+Oppgave 1
+  De 5 stegene i Fetch/Execute cycle-en er:
+      1. Instruction Fetch
+      2. Instruction Decode
+      3. Data Fetch
+      4. Instruction Execution
+      5. Result Return
+Oppgave 2
+  Instruction Fetch
+
+Oppgave 3
+  Program Counter er en counter som holder den neste operasjonen.
+
+Oppgave 4
+  Forventet klokkehastighet på en stasjonær datamaskin er >2.5GHz, men laptoper har ofte betydelig mindre klokkehastighet.
+
+Oppgave 5
+  SSD står for Solid State Drive
+
+Oppgave 6
+  En SSD er forskjellig fra en harddisk ved at den ikke har en spinnende plate. Den har istedet flash-minne som er myeeeeee raskere.
+
+Oppgave 7
+  ALU som står for Arithmetic Logic Unit er et komponent som gjør logiske operasjoner og er viktig i en datamaskin.

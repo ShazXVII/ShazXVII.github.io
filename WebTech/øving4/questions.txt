@@ -1,0 +1,3 @@
+1. Autoplay is disabled on mobile devices to make sure that they don't use cellular data on videos that the user don't want to watch.
+2. The snippet will do nothing if the website is visited on a device with a screen of 320x568 due to it being within the media query requirements
+3. Some of the advantages of having a responsive website compared to one mobile site and one desktop site is that you don't have to maintain two html files whenever you update the content. The user can also link from a mobile device to a desktop device with the same link with no problem. Nowadays there are so many different resolutions, so making a mobile site for each resolution is a lot of work compared to just using media queries.
