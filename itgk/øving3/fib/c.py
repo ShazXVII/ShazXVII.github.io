@@ -14,3 +14,16 @@ while len(kList)<k-2:
     kList.append(f)
 print(kList)
 #print(sum(kList))
+
+
+
+
+
+
+
+
+
+
+
+
+
